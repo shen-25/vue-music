@@ -15,6 +15,10 @@ module.exports = defineConfig({
     },
   },
   devServer: {
+    /**
+     * 官网
+     * https://github.com/webpack/webpack-dev-server/blob/master/migration-v4.md
+     */
     onBeforeSetupMiddleware: (devServer) => {
       registerRouter(devServer.app);
     },

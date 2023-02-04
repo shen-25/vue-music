@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend" v-loading="loading">
+  <div class="recommend" v-loading:[loadingText]="loading">
     <scroll class="recommend-content">
       <div>
         <div class="slider-wrapper">
@@ -17,7 +17,8 @@
               @click="selectItem(item)"
             >
               <div class="icon">
-                <img width="60" height="60" v-lazy="item.pic" />
+                <img width="60" height="60" />
+                <!--v-lazy="item.pic" -->
               </div>
               <div class="text">
                 <h2 class="name">
@@ -50,6 +51,7 @@ export default {
     return {
       sliders: [],
       albums: [],
+      loadingText: "推荐页面",
     };
   },
   computed: {
@@ -58,10 +60,12 @@ export default {
     },
   },
   async created() {
-    const result = await getRecommend();
-    // const result = await recommend.result;
-    this.sliders = result.sliders;
-    this.albums = result.albums;
+    // const result = await getRecommend();
+    setTimeout(() => {
+      const result = recommend.result;
+      this.sliders = result.sliders;
+      this.albums = result.albums;
+    }, 2400);
   },
 };
 </script>
