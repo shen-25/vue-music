@@ -65,7 +65,7 @@ export default {
       const result = recommend.result;
       this.sliders = result.sliders;
       this.albums = result.albums;
-    }, 2400);
+    }, 1);
   },
 };
 </script>
