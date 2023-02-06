@@ -1,7 +1,7 @@
 <template>TopList</template>
 <script>
 export default {
-  naem: "TopList",
+  name: "TopList",
 };
 </script>
 <style lang="scss" scoped></style>
