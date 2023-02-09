@@ -8,7 +8,7 @@
 import storage from "good-storage";
 
 import { getSingerDetail } from "@/service/singer";
-import singerDetail from "../../cache/singerDetail.json";
+import singerDetail from "../../cache/singerDetail2.json";
 import { processSongs } from "@/service/song";
 import MusicList from "@/components/music-list/MusicList.vue";
 import { SINGER_KEY } from "@/assets/js/constant";
@@ -56,7 +56,8 @@ export default {
       this.$router.push({ path });
       return;
     }
-    // 请求第三方接口
+
+    // // 请求第三方接口;
     // const result = await getSingerDetail(this.computedSinger);
     // this.songs = await processSongs(result.songs);
     // this.loading = false;

@@ -1,0 +1,17 @@
+{
+  "code": 0,
+  "result": {
+    "songs": [
+      {
+        "id": 260678,
+        "mid": "003aAPj81VWrbL",
+        "name": "Love Story(Taylor's Version)",
+        "singer": "霉霉2",
+        "url": "http://m801.music.126.net/20230209220631/9778a077e423b12723d456f02e6716a9/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14355133121/e5b9/63f4/f3d0/b32e5a8eb0429e023775324b4df5e4d8.mp3",
+        "duration": 30,
+        "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000004Z85XP1c25b7.jpg?max_age=2592000",
+        "album": "What's Going On...?"
+      }
+    ]
+  }
+}
