@@ -5,11 +5,11 @@
     </div>
     <h1 class="title">{{ title }}</h1>
     <div class="bg-image" :style="bgImageStyle" ref="bgImage">
-      <div class="play-btn-wrapper">
-        <!-- <div v-show="songs.length > 0" class="play-btn">
+      <div class="play-btn-wrapper" :style="playBtnStyle">
+        <div v-show="songs.length > 0" class="play-btn" @click="random">
           <i class="icon-play"></i>
           <span class="text">随机播放全部</span>
-        </div> -->
+        </div>
       </div>
       <div class="filter" :style="filterStyle"></div>
     </div>
@@ -22,7 +22,7 @@
       @scroll="onScroll"
     >
       <div class="song-list-wrapper">
-        <SongList :songs="songs"></SongList>
+        <SongList :songs="songs" @select="selectItem"></SongList>
       </div>
     </Scroll>
   </div>
@@ -31,6 +31,7 @@
 <script>
 import SongList from "@/components/base/song-list/SongList.vue";
 import Scroll from "@/components/base/scroll/Scroll.vue";
+import { mapActions } from "vuex";
 
 const RESERVED_HEIGHT = 40;
 
@@ -70,6 +71,13 @@ export default {
     onScroll(pos) {
       this.scrollY = -pos.y;
     },
+    selectItem({ song, index }) {
+      this.selectPlay({ list: this.songs, index });
+    },
+    random() {
+      this.randomPlay(this.songs);
+    },
+    ...mapActions(["selectPlay", "randomPlay"]),
   },
   computed: {
     bgImageStyle() {
@@ -117,6 +125,13 @@ export default {
       return {
         backdropFilter: `blur(${blur}px)`,
       };
+    },
+    playBtnStyle() {
+      let display = "";
+      if (this.scrollY > this.maxTranslateY) {
+        display = "none";
+      }
+      return { display };
     },
     noResult() {
       return !this.loading && !this.songs.length;
