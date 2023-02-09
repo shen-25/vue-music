@@ -37,11 +37,11 @@ export default function useFixed(props) {
   watch(scrollY, (newY) => {
     const listHeightValue = listHeight.value;
     for (let i = 0; i < listHeightValue.length - 1; i++) {
-      const hegihtTop = listHeightValue[i];
-      const hegihtButton = listHeightValue[i + 1];
-      if (newY >= hegihtTop && newY <= hegihtButton) {
+      const heightTop = listHeightValue[i];
+      const heightButton = listHeightValue[i + 1];
+      if (newY >= heightTop && newY <= heightButton) {
         currentIndex.value = i;
-        distance.value = hegihtButton - newY;
+        distance.value = heightButton - newY;
       }
     }
   });
@@ -49,13 +49,13 @@ export default function useFixed(props) {
   function calculate() {
     const list = groupRef.value.children;
     const listHeightValue = listHeight.value;
-    let hegiht = 0;
+    let height = 0;
     listHeightValue.length = 0;
 
-    listHeightValue.push(hegiht);
+    listHeightValue.push(height);
     for (let i = 0; i < list.length; i++) {
-      hegiht += list[i].clientHeight;
-      listHeightValue.push(hegiht);
+      height += list[i].clientHeight;
+      listHeightValue.push(height);
     }
   }
 

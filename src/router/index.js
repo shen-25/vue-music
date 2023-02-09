@@ -1,10 +1,10 @@
 import { createRouter, createWebHashHistory } from "vue-router";
+import SingerDetail from "@/views/SingerDetail";
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: () =>
-      import(/* webpackChunkName: "Recommend" */ "@/views/HomeView.vue"),
+    redirect: "/recommend",
   },
   {
     path: "/recommend",
@@ -17,6 +17,12 @@ const routes = [
     name: "Singer",
     component: () =>
       import(/* webpackChunkName: "Singer" */ "@/views/Singer.vue"),
+    children: [
+      {
+        path: ":id",
+        component: SingerDetail,
+      },
+    ],
   },
   {
     path: "/top-list",

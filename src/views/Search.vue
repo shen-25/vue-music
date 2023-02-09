@@ -1,7 +1,7 @@
 <template>Search</template>
 <script>
 export default {
-  naem: "Search",
+  name: "Search",
 };
 </script>
 <style lang="scss" scoped></style>
