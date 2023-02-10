@@ -8,7 +8,7 @@
 import storage from "good-storage";
 
 import { getSingerDetail } from "@/service/singer";
-import singerDetail from "../../cache/singerDetail2.json";
+import singerDetail from "../../cache/singerDetail.json";
 import { processSongs } from "@/service/song";
 import MusicList from "@/components/music-list/MusicList.vue";
 import { SINGER_KEY } from "@/assets/js/constant";

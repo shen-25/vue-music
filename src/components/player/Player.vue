@@ -12,8 +12,13 @@
           <h1 class="title">{{ currentSong.name }}</h1>
           <h2 class="subtitle">{{ currentSong.singer }}</h2>
         </div>
-        <div class="middle">
-          <div class="middle-l">
+        <div
+          class="middle"
+          @touchstart.prevent="onMiddleTouchStart"
+          @touchmove.prevent="onMiddleTouchMove"
+          @touchend.prevent="onMiddleTouchEnd"
+        >
+          <div class="middle-l" :style="middleLStyle">
             <div class="cd-wrapper">
               <div ref="cdRef" class="cd">
                 <img
@@ -24,9 +29,38 @@
                 />
               </div>
             </div>
+            <div class="playing-lyric-wrapper">
+              <div class="playing-lyric">{{ playingLyric }}</div>
+            </div>
           </div>
+
+          <Scroll class="middle-r" ref="lyricScrollRef" :style="middleRStyle">
+            <div class="lyric-wrapper">
+              <div v-if="currentLyric" ref="lyricListRef">
+                <p
+                  class="text"
+                  :class="{ current: currentLineNum === index }"
+                  v-for="(line, index) in currentLyric.lines"
+                  :key="line.num"
+                >
+                  {{ line.txt }}
+                </p>
+              </div>
+              <div class="pure-music" v-show="pureMusicLyric">
+                <p>{{ pureMusicLyric }}</p>
+              </div>
+            </div>
+          </Scroll>
         </div>
+
         <div class="bottom">
+          <div class="dot-wrapper">
+            <span class="dot" :class="{ active: currentShow === 'cd' }"></span>
+            <span
+              class="dot"
+              :class="{ active: currentShow === 'lyric' }"
+            ></span>
+          </div>
           <div class="progress-wrapper">
             <span class="time time-l">{{ formatTime(currentTime) }}</span>
             <div class="progress-bar-wrapper">
@@ -80,15 +114,19 @@ import { computed, ref, watch } from "vue";
 
 import ProgressBar from "./ProcessBar.vue";
 
+import Scroll from "@/components/base/scroll/Scroll.vue";
+
 import useMode from "./use-mode";
 import useFavorite from "./use-favorite";
 import useCd from "./use-cd";
+import useLyric from "./use-lyric";
+import useMiddleInteractive from "./use-middle-interactive";
 
 import { formatTime } from "@/assets/js/util";
 import { PLAY_MODE } from "@/assets/js/constant";
 export default {
   name: "Player",
-  components: { ProgressBar },
+  components: { ProgressBar, Scroll },
   setup() {
     const audioRef = ref(null);
     const store = useStore();
@@ -140,6 +178,28 @@ export default {
     // cd
     const { cdCls, cdRef, cdImageRef } = useCd();
 
+    // 歌词
+    const {
+      currentLyric,
+      currentLineNum,
+      pureMusicLyric,
+      playLyric,
+      stopLyric,
+      lyricScrollRef,
+      lyricListRef,
+      playingLyric,
+    } = useLyric(songReady, currentTime);
+
+    // 切换middle
+    const {
+      currentShow,
+      middleLStyle,
+      middleRStyle,
+      onMiddleTouchStart,
+      onMiddleTouchMove,
+      onMiddleTouchEnd,
+    } = useMiddleInteractive();
+
     // 当前播放列表
     const playList = computed(() => store.state.playList);
 
@@ -153,7 +213,6 @@ export default {
       if (!newSong.id || !newSong.url) {
         return;
       }
-
       // 切换下一首歌曲, 重置当前时间
       currentTime.value = 0;
 
@@ -171,7 +230,13 @@ export default {
         return;
       }
       const audioEl = audioRef.value;
-      newPlaying ? audioEl.play() : audioEl.pause();
+      if (newPlaying) {
+        audioEl.play();
+        playLyric();
+      } else {
+        audioEl.pause();
+        stopLyric();
+      }
     });
 
     // 返回，退出全屏播放音乐
@@ -242,6 +307,7 @@ export default {
         return;
       }
       songReady.value = true;
+      playLyric();
     }
 
     // 歌曲播放出错
@@ -260,6 +326,9 @@ export default {
     function onProgressChanging(progress) {
       progressChanging = true;
       currentTime.value = currentSong.value.duration * progress;
+      // playLyric 依赖currentTime 先跳到歌词同步 暂停 移动完后再play
+      playLyric();
+      stopLyric();
     }
     function onProgressChanged(progress) {
       progressChanging = false;
@@ -268,6 +337,7 @@ export default {
       if (!playing.value) {
         store.commit("setPlayingState", true);
       }
+      playLyric();
     }
 
     // 歌曲播放完后
@@ -312,6 +382,20 @@ export default {
       cdCls,
       cdRef,
       cdImageRef,
+      // 歌词
+      currentLyric,
+      currentLineNum,
+      pureMusicLyric,
+      lyricScrollRef,
+      lyricListRef,
+      playingLyric,
+      // 切换middle
+      currentShow,
+      middleLStyle,
+      middleRStyle,
+      onMiddleTouchStart,
+      onMiddleTouchMove,
+      onMiddleTouchEnd,
     };
   },
 };

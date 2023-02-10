@@ -27,7 +27,6 @@ export default function useCd() {
 
     const wrapperTransform = getComputedStyle(wrapper).transform;
 
-    console.log(wrapperTransform);
     // 外层第二次时有角度了
     // 二者角度需要叠加
     wrapper.style.transform =
