@@ -67,9 +67,7 @@ export default {
       const result = singerDetail.result;
       this.songs = result.songs;
       this.loading = false;
-    }, 1000);
-
-    // this.songs = await processSongs(result.songs);
+    }, 10);
   },
 };
 </script>

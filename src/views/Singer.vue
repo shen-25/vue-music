@@ -29,10 +29,12 @@ export default {
   },
   async created() {
     // const result = await getSingerList();
+    // this.singers = result.singers;
+
     setTimeout(() => {
       const result = singer.result;
       this.singers = result.singers;
-    }, 1);
+    }, 2000);
   },
   methods: {
     selectSinger(singer) {
@@ -52,8 +54,6 @@ export default {
 .singer {
   position: fixed;
   width: 100%;
-  height: 100%;
   top: 88px;
-  bottom: 0;
 }
 </style>

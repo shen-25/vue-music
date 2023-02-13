@@ -1,5 +1,6 @@
 export function shuffle(source) {
   const arr = source.slice();
+
   for (let i = 0; i < arr.length; i++) {
     const j = getRandomInt(i);
     swap(arr, i, j);

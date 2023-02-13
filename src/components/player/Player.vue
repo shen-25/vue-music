@@ -1,12 +1,19 @@
 <template>
-  <div class="player">
-    <div name="normal">
+  <div class="player" v-show="playList.length">
+    <transition
+      name="normal"
+      ref="cdWrapperRef"
+      @enter="enter"
+      @after-enter="afterEnter"
+      @leave="leave"
+      @after-leave="afterLeave"
+    >
       <div class="normal-player" v-show="fullScreen">
         <div class="background">
           <img :src="currentSong.pic" />
         </div>
         <div class="top">
-          <div class="back" @click="goBack">
+          <div class="back" @click.stop="goBack">
             <i class="icon-back"></i>
           </div>
           <h1 class="title">{{ currentSong.name }}</h1>
@@ -65,6 +72,7 @@
             <span class="time time-l">{{ formatTime(currentTime) }}</span>
             <div class="progress-bar-wrapper">
               <ProgressBar
+                ref="progressBarRef"
                 :progress="progress"
                 @progress-changing="onProgressChanging"
                 @progress-changed="onProgressChanged"
@@ -96,7 +104,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </transition>
+    <MiniPlayer :progress="progress" :toggle-play="togglePlay" />
     <audio
       ref="audioRef"
       @pause="pause"
@@ -110,25 +119,27 @@
 
 <script>
 import { useStore } from "vuex";
-import { computed, ref, watch } from "vue";
+import { computed, ref, watch, nextTick } from "vue";
 
 import ProgressBar from "./ProcessBar.vue";
-
 import Scroll from "@/components/base/scroll/Scroll.vue";
+import MiniPlayer from "./MiniPlayer.vue";
 
 import useMode from "./use-mode";
 import useFavorite from "./use-favorite";
 import useCd from "./use-cd";
 import useLyric from "./use-lyric";
 import useMiddleInteractive from "./use-middle-interactive";
+import useAnimation from "./use-animation";
 
 import { formatTime } from "@/assets/js/util";
 import { PLAY_MODE } from "@/assets/js/constant";
 export default {
   name: "Player",
-  components: { ProgressBar, Scroll },
+  components: { ProgressBar, Scroll, MiniPlayer },
   setup() {
     const audioRef = ref(null);
+    const progressBarRef = ref(null);
     const store = useStore();
 
     const songReady = ref(false);
@@ -145,7 +156,6 @@ export default {
     });
 
     //computed
-
     // 播放器是否播放
     const playing = computed(() => {
       return store.state.playing;
@@ -200,6 +210,10 @@ export default {
       onMiddleTouchEnd,
     } = useMiddleInteractive();
 
+    // 播放模式动画
+    const { cdWrapperRef, enter, afterEnter, leave, afterLeave } =
+      useAnimation();
+
     // 当前播放列表
     const playList = computed(() => store.state.playList);
 
@@ -220,6 +234,7 @@ export default {
       const audioEl = audioRef.value;
       audioEl.src = newSong.url;
       audioEl.play();
+      store.commit("setPlayingState", true);
     });
 
     // 监听播发器是否播放
@@ -238,6 +253,12 @@ export default {
         stopLyric();
       }
     });
+    watch(fullScreen, async (newFullScreen) => {
+      if (newFullScreen) {
+        await nextTick();
+        progressBarRef.value.setOffset(progress.value);
+      }
+    });
 
     // 返回，退出全屏播放音乐
     function goBack() {
@@ -246,6 +267,7 @@ export default {
 
     // 点击播放按钮
     function togglePlay() {
+      console.log("togglePlay");
       store.commit("setPlayingState", !playing.value);
     }
     // 电脑待机、关闭屏幕暂停播放
@@ -268,9 +290,6 @@ export default {
           index = len - 1;
         }
         store.commit("setCurrentIndex", index);
-        if (!playing.value) {
-          store.commit("setPlayingState", true);
-        }
       }
     }
 
@@ -288,9 +307,6 @@ export default {
           index = 0;
         }
         store.commit("setCurrentIndex", index);
-        if (!playing.value) {
-          store.commit("setPlayingState", true);
-        }
       }
     }
 
@@ -354,6 +370,7 @@ export default {
       audioRef,
       fullScreen,
       currentSong,
+      playList,
       goBack,
       playIcon,
       togglePlay,
@@ -372,6 +389,7 @@ export default {
       toggleFavorite,
       // 进度条
       progress,
+      progressBarRef,
       currentTime,
       updateTime,
       formatTime,
@@ -396,6 +414,12 @@ export default {
       onMiddleTouchStart,
       onMiddleTouchMove,
       onMiddleTouchEnd,
+      // 切换动画(播放模式)
+      cdWrapperRef,
+      enter,
+      afterEnter,
+      leave,
+      afterLeave,
     };
   },
 };

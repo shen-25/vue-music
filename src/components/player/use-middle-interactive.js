@@ -19,6 +19,7 @@ export default function useMiddleInteractive() {
     const deltaY = e.touches[0].pageY - touch.startY;
     const absDeltaX = Math.abs(deltaX);
     const absDeltaY = Math.abs(deltaY);
+    // 好好思考 锁是v 不用切换
     if (!touch.directionLocked) {
       touch.directionLocked = absDeltaX >= absDeltaY ? "h" : "v";
     }

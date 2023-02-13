@@ -33,3 +33,41 @@ export function changeMode({ commit, state, getters }, mode) {
   commit("setCurrentIndex", index);
   commit("setPlayMode", mode);
 }
+
+export function removeSong({ commit, state }, song) {
+  const sequenceList = state.sequenceList.slice();
+  const playList = state.playList.slice();
+  const sequenceIndex = findIndex(sequenceList, song);
+  const playListIndex = findIndex(playList, song);
+  if (playListIndex < 0 || sequenceIndex < 0) {
+    return;
+  }
+
+  sequenceList.splice(sequenceIndex, 1);
+  playList.splice(playListIndex, 1);
+
+  let currentIndex = state.currentIndex;
+  if (playListIndex < currentIndex || currentIndex === playList.length) {
+    currentIndex--;
+  }
+  commit("setSequenceList", sequenceList);
+  commit("setPlayList", playList);
+  commit("setCurrentIndex", currentIndex);
+  if (!playList.length) {
+    commit("setPlayingState", false);
+  }
+}
+
+function findIndex(list, song) {
+  const index = list.findIndex((item) => {
+    return item.id === song.id;
+  });
+  return index;
+}
+
+export function clearSongList({ commit }) {
+  commit("setSequenceList", []);
+  commit("setPlayList", []);
+  commit("setCurrentIndex", 0);
+  commit("setPlayingState", false);
+}

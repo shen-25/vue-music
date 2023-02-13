@@ -1,6 +1,6 @@
 <template>
   <div class="music-list">
-    <div class="back" @click="goBack">
+    <div class="back" @click.stop="goBack">
       <i class="icon-back"></i>
     </div>
     <h1 class="title">{{ title }}</h1>
@@ -30,8 +30,8 @@
 
 <script>
 import SongList from "@/components/base/song-list/SongList.vue";
-import Scroll from "@/components/base/scroll/Scroll.vue";
-import { mapActions } from "vuex";
+import Scroll from "@/components/wrap-scroll/WrapScroll";
+import { mapActions, mapState } from "vuex";
 
 const RESERVED_HEIGHT = 40;
 
@@ -75,7 +75,7 @@ export default {
       this.selectPlay({ list: this.songs, index });
     },
     random() {
-      this.randomPlay(this.songs);
+      this.randomPlay({ list: this.songs });
     },
     ...mapActions(["selectPlay", "randomPlay"]),
   },
@@ -108,8 +108,10 @@ export default {
       };
     },
     scrollStyle() {
+      const bottom = this.playList.length ? "50px" : "0";
       return {
         top: `${this.imageHeight}px`,
+        bottom,
       };
     },
     filterStyle() {
@@ -136,6 +138,7 @@ export default {
     noResult() {
       return !this.loading && !this.songs.length;
     },
+    ...mapState(["playList"]),
   },
   mounted() {
     this.imageHeight = this.$refs.bgImage.clientHeight;
