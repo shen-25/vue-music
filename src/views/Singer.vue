@@ -3,7 +3,7 @@
     <IndexList :data="singers" @select="selectSinger" />
     <router-view v-slot="{ Component }">
       <transition name="slide">
-        <component appear :is="Component" :singer="selectedSinger"></component>
+        <component appear :is="Component" :data="selectedSinger"></component>
       </transition>
     </router-view>
   </div>
@@ -34,7 +34,7 @@ export default {
     setTimeout(() => {
       const result = singer.result;
       this.singers = result.singers;
-    }, 2000);
+    }, 100);
   },
   methods: {
     selectSinger(singer) {

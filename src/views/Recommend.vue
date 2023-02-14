@@ -33,9 +33,16 @@
         </div>
       </div>
     </scroll>
+    <router-view v-slot="{ Component }">
+      <transition name="slide">
+        <component appear :is="Component" :data="selectAlbum"></component>
+      </transition>
+    </router-view>
   </div>
 </template>
 <script>
+import storage from "good-storage";
+import { ALBUM_KEY } from "@/assets/js/constant";
 import { getRecommend } from "@/service/recommend";
 import Slider from "@/components/base/slider/Slider.vue";
 import Scroll from "@/components/base/scroll/Scroll";
@@ -52,11 +59,25 @@ export default {
       sliders: [],
       albums: [],
       loadingText: "推荐页面",
+      selectAlbum: null,
     };
   },
   computed: {
     loading() {
       return !this.sliders.length && !this.albums.length;
+    },
+  },
+  methods: {
+    selectItem(album) {
+      this.selectAlbum = album;
+      this.cacheAlbum(album);
+      this.$router.push({
+        path: `/recommend/${album.id}`,
+      });
+    },
+    // 缓存album
+    cacheAlbum(album) {
+      storage.session.set(ALBUM_KEY, album);
     },
   },
   async created() {

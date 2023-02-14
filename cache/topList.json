@@ -1,0 +1,574 @@
+{
+  "code": 0,
+  "result": {
+    "topList": [
+      {
+        "id": 62,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000008yzF81SjdJ8.jpg",
+        "name": "飙升榜",
+        "period": "2023-02-14",
+        "songList": [
+          { "id": 392394886, "singerName": "鹿晗", "songName": "光荣之路" },
+          {
+            "id": 102221789,
+            "singerName": "Rihanna/Jay-Z",
+            "songName": "Umbrella"
+          },
+          {
+            "id": 967478,
+            "singerName": "Rihanna/Calvin Harris",
+            "songName": "We Found Love"
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002xft502luEx9.jpg",
+        "name": "热歌榜",
+        "period": "2023-02-14",
+        "songList": [
+          {
+            "id": 368139519,
+            "singerName": "容祖儿",
+            "songName": "就让这大雨全都落下"
+          },
+          { "id": 384263699, "singerName": "李荣浩", "songName": "乌梅子酱" },
+          { "id": 372639235, "singerName": "赵雷", "songName": "我记得" }
+        ]
+      },
+      {
+        "id": 27,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M00000445RU82bxqX8.jpg",
+        "name": "新歌榜",
+        "period": "2023-02-14",
+        "songList": [
+          { "id": 393418619, "singerName": "王子健", "songName": "循迹" },
+          {
+            "id": 392702643,
+            "singerName": "黄绮珊/希林娜依高",
+            "songName": "是妈妈是女儿"
+          },
+          { "id": 393960841, "singerName": "林俊杰", "songName": "达尔文" }
+        ]
+      },
+      {
+        "id": 4,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000ugZib2G5ogV.jpg",
+        "name": "流行指数榜",
+        "period": "2023-02-14",
+        "songList": [
+          { "id": 384263699, "singerName": "李荣浩", "songName": "乌梅子酱" },
+          { "id": 391194138, "singerName": "袁小葳", "songName": "人海万里" },
+          { "id": 394348707, "singerName": "脱景麟", "songName": "玩家" }
+        ]
+      },
+      {
+        "id": 57,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M00000272jhq2TPR4q.jpg",
+        "name": "喜力电音榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 389855098,
+            "singerName": "Mike Candys",
+            "songName": "For The People"
+          },
+          {
+            "id": 391178249,
+            "singerName": "ThimLife/Bibiane Z",
+            "songName": "Home (Again) (Thimlife & Lorian Rose Version)"
+          },
+          {
+            "id": 386561726,
+            "singerName": "R3HAB/A Touch Of Class/Alan Walker",
+            "songName": "All Around The World (Alan Walker Remix)"
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001cZ0ZJ2B8HF5.jpg",
+        "name": "腾讯音乐人原创榜",
+        "period": "2023-02-13",
+        "songList": [
+          {
+            "id": 393709107,
+            "singerName": "伏仪",
+            "songName": "愤怒是源自我的无知吗"
+          },
+          { "id": 393282434, "singerName": "C.S.B.Q", "songName": "拥抱" },
+          { "id": 393418619, "singerName": "王子健", "songName": "循迹" }
+        ]
+      },
+      {
+        "id": 67,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000UWA4s2bgChD.jpg",
+        "name": "听歌识曲榜",
+        "period": "2023-02-13",
+        "songList": [
+          { "id": 384107426, "singerName": "那艺娜", "songName": "爱如火" },
+          { "id": 372639235, "singerName": "赵雷", "songName": "我记得" },
+          {
+            "id": 376343205,
+            "singerName": "3秒超市",
+            "songName": "一半疯了一半算了"
+          }
+        ]
+      },
+      {
+        "id": 201,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000sluMD1UYsWl.jpg",
+        "name": "MV榜",
+        "period": "",
+        "songList": [
+          { "id": 0, "singerName": "李荣浩", "songName": "乌梅子酱" },
+          { "id": 0, "singerName": "周深", "songName": "花开忘忧" },
+          {
+            "id": 0,
+            "singerName": "周深",
+            "songName": "人是_ (《流浪地球2》电影定义主题曲)"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000003wBz5A4eDZdO.jpg",
+        "name": "内地榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 389979699,
+            "singerName": "郁可唯",
+            "songName": "去有风的地方"
+          },
+          { "id": 393418619, "singerName": "王子健", "songName": "循迹" },
+          { "id": 390152632, "singerName": "空城", "songName": "换个角色爱你" }
+        ]
+      },
+      {
+        "id": 59,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002ECuAu3KqeMx.jpg",
+        "name": "香港地区榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 368139519,
+            "singerName": "容祖儿",
+            "songName": "就让这大雨全都落下"
+          },
+          { "id": 389987990, "singerName": "李克勤", "songName": "晚风心里吹" },
+          { "id": 391032669, "singerName": "陈奕迅", "songName": "盲婚哑嫁" }
+        ]
+      },
+      {
+        "id": 61,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002vltyi2yaHk4.jpg",
+        "name": "台湾地区榜",
+        "period": "2023_6",
+        "songList": [
+          { "id": 393960841, "singerName": "林俊杰", "songName": "达尔文" },
+          {
+            "id": 393959368,
+            "singerName": "林俊杰",
+            "songName": "想见你想见你想见你"
+          },
+          {
+            "id": 393920398,
+            "singerName": "苏有朋",
+            "songName": "我最大的奇迹"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000003xs4WI3irW57.jpg",
+        "name": "欧美榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 391573225,
+            "singerName": "Miley Cyrus",
+            "songName": "Flowers"
+          },
+          {
+            "id": 388631555,
+            "singerName": "Walk Off the Earth",
+            "songName": "My Stupid Heart (Explicit)"
+          },
+          { "id": 391617371, "singerName": "XG", "songName": "SHOOTING STAR" }
+        ]
+      },
+      {
+        "id": 16,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002lDtZF21R7MA.jpg",
+        "name": "韩国榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 388821920,
+            "singerName": "NewJeans (뉴진스)",
+            "songName": "Ditto"
+          },
+          {
+            "id": 394087691,
+            "singerName": "BSS (SEVENTEEN)/李泳知 (이영지)",
+            "songName": "파이팅 해야지 (Feat. 이영지) (Fighting)"
+          },
+          {
+            "id": 394087689,
+            "singerName": "BSS (SEVENTEEN)/Peder Elias",
+            "songName": "7시에 들어줘 (Feat. Peder Elias) (7PM)"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000034vPjR4ItTgy.jpg",
+        "name": "日本榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 394324745,
+            "singerName": "ヨルシカ (Yorushika)",
+            "songName": "アルジャーノン (阿尔吉侬)"
+          },
+          {
+            "id": 369997972,
+            "singerName": "HoneyWorks/かぴ",
+            "songName": "可愛くてごめん (feat. かぴ) (这么可爱真是抱歉)"
+          },
+          {
+            "id": 371727208,
+            "singerName": "澤野弘之 (さわの ひろゆき)/SennaRin (茜雫凛)",
+            "songName": "IVORY TOWER (feat. SennaRin)"
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002dBGIO349MDS.jpg",
+        "name": "网络歌曲榜",
+        "period": "2023_6",
+        "songList": [
+          { "id": 394348839, "singerName": "半吨兄弟", "songName": "为情所伤" },
+          { "id": 391674264, "singerName": "夏婉安", "songName": "后来" },
+          { "id": 392694311, "singerName": "高进", "songName": "小哥" }
+        ]
+      },
+      {
+        "id": 63,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001SVCeI2oKxaV.jpg",
+        "name": "DJ舞曲榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 392937832,
+            "singerName": "阿辰（阎辰）/袁小葳",
+            "songName": "Baby I Love You (化作烟火)"
+          },
+          {
+            "id": 391493180,
+            "singerName": "弹棉花的小花",
+            "songName": "成瘾 (DJ楠哈哈版)"
+          },
+          {
+            "id": 122166609,
+            "singerName": "Pogee/Barbara",
+            "songName": "Miami Dancefloors (Ex-Po Remix Edit)"
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000004fTaTE3D3Laj.jpg",
+        "name": "抖快榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 368139519,
+            "singerName": "容祖儿",
+            "songName": "就让这大雨全都落下"
+          },
+          { "id": 372639235, "singerName": "赵雷", "songName": "我记得" },
+          { "id": 288767498, "singerName": "袁树雄", "songName": "早安隆回" }
+        ]
+      },
+      {
+        "id": 64,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000035aaCx09Xa0o.jpg",
+        "name": "综艺新歌榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 392237407,
+            "singerName": "林峯",
+            "songName": "晚风心里吹 (Live)"
+          },
+          { "id": 393052752, "singerName": "周深", "songName": "月光 (Live)" },
+          {
+            "id": 392569113,
+            "singerName": "周深",
+            "songName": "歌曲：花开忘忧 (Live)"
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000010PeHi0fA3BF.jpg",
+        "name": "影视金曲榜",
+        "period": "2023_6",
+        "songList": [
+          { "id": 391610675, "singerName": "周深", "songName": "人是_" },
+          {
+            "id": 389979699,
+            "singerName": "郁可唯",
+            "songName": "去有风的地方"
+          },
+          {
+            "id": 392492653,
+            "singerName": "唐汉霄",
+            "songName": "再见深海 (微亮的瞬间)"
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000026L1LY1ClHO1.jpg",
+        "name": "国风热歌榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 391939155,
+            "singerName": "摩登兄弟刘宇宁",
+            "songName": "六爻"
+          },
+          {
+            "id": 393913296,
+            "singerName": "紫麒麟/庆文",
+            "songName": "华夏焱"
+          },
+          { "id": 381363830, "singerName": "一只白羊", "songName": "赐我" }
+        ]
+      },
+      {
+        "id": 58,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000000dQHo08PPxD.jpg",
+        "name": "说唱榜",
+        "period": "2023_6",
+        "songList": [
+          { "id": 394060996, "singerName": "GAI周延", "songName": "朝天门" },
+          {
+            "id": 391618554,
+            "singerName": "张羽涵Leezi/永猩Nssus",
+            "songName": "Lay it down"
+          },
+          {
+            "id": 393363470,
+            "singerName": "INTO1-刘彰",
+            "songName": "峰顶 (AK remix)"
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000TAbMO3HzyH2.jpg",
+        "name": "动漫音乐榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 392492653,
+            "singerName": "唐汉霄",
+            "songName": "再见深海 (微亮的瞬间)"
+          },
+          { "id": 392423476, "singerName": "毛不易", "songName": "小丑" },
+          { "id": 393466735, "singerName": "GALA", "songName": "北戴河之歌" }
+        ]
+      },
+      {
+        "id": 73,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002hAGzP35ZjAG.jpg",
+        "name": "游戏音乐榜",
+        "period": "2023_6",
+        "songList": [
+          { "id": 389987990, "singerName": "李克勤", "songName": "晚风心里吹" },
+          {
+            "id": 391518942,
+            "singerName": "周深/王者荣耀",
+            "songName": "祈愿山海"
+          },
+          {
+            "id": 393353157,
+            "singerName": "光与夜之恋官方音乐号",
+            "songName": "奈特兰之诗"
+          }
+        ]
+      },
+      {
+        "id": 70,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000003RBlTe1Cye61.jpg",
+        "name": "达人音乐榜",
+        "period": "2023_6",
+        "songList": [
+          { "id": 393154894, "singerName": "COOX.", "songName": "很任性" },
+          { "id": 393464751, "singerName": "白允y", "songName": "等不来花开" },
+          { "id": 388782527, "singerName": "余坪", "songName": "梦里花 (Live)" }
+        ]
+      },
+      {
+        "id": 36,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000000sf4kD0yINcr.jpg",
+        "name": "K歌金曲榜",
+        "period": "2023_6",
+        "songList": [
+          { "id": 449200, "singerName": "周杰伦", "songName": "说好的幸福呢" },
+          {
+            "id": 309058164,
+            "singerName": "莫文蔚",
+            "songName": "这世界那么多人"
+          },
+          { "id": 938054, "singerName": "戚薇", "songName": "如果爱忘了" }
+        ]
+      },
+      {
+        "id": 108,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002m0OxP0LWpUa.jpg",
+        "name": "美国公告牌榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 391573225,
+            "singerName": "Miley Cyrus",
+            "songName": "Flowers"
+          },
+          { "id": 387630335, "singerName": "SZA", "songName": "Kill Bill" },
+          {
+            "id": 386972934,
+            "singerName": "Metro Boomin/The Weeknd/21 Savage",
+            "songName": "Creepin' (Clean)"
+          }
+        ]
+      },
+      {
+        "id": 129,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000002Ilejo3LH6LZ.jpg",
+        "name": "韩国Melon榜",
+        "period": "2023_7",
+        "songList": [
+          {
+            "id": 388821920,
+            "singerName": "NewJeans (뉴진스)",
+            "songName": "Ditto"
+          },
+          {
+            "id": 390142723,
+            "singerName": "NewJeans (뉴진스)",
+            "songName": "OMG"
+          },
+          {
+            "id": 369475641,
+            "singerName": "NewJeans (뉴진스)",
+            "songName": "Hype Boy"
+          }
+        ]
+      },
+      {
+        "id": 107,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001K5SNr0iQkNj.jpg",
+        "name": "英国UK榜",
+        "period": "2023_7",
+        "songList": [
+          {
+            "id": 391573225,
+            "singerName": "Miley Cyrus",
+            "songName": "Flowers"
+          },
+          {
+            "id": 376442254,
+            "singerName": "RAYE/070 Shake",
+            "songName": "Escapism. (Explicit)"
+          },
+          { "id": 387315191, "singerName": "SZA", "songName": "Kill Bill" }
+        ]
+      },
+      {
+        "id": 105,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000008tBxz3O2vrd.jpg",
+        "name": "日本公信榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 382864440,
+            "singerName": "10-FEET (テンフィート)",
+            "songName": "第ゼロ感 (第零感)"
+          },
+          {
+            "id": 378709532,
+            "singerName": "Official髭男dism (OFFICIAL HIGE DANDISM)",
+            "songName": "Subtitle"
+          },
+          { "id": 393378984, "singerName": "INI", "songName": "New Day" }
+        ]
+      },
+      {
+        "id": 126,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000004duWcq0pvUbP.jpg",
+        "name": "JOOX本地热播榜",
+        "period": "2023_6",
+        "songList": [
+          {
+            "id": 392059891,
+            "singerName": "陈卓贤",
+            "songName": "再见 宁静海"
+          },
+          { "id": 391918938, "singerName": "MC 张天赋", "songName": "世一" },
+          { "id": 390246015, "singerName": "吕爵安", "songName": "LOVERSE" }
+        ]
+      },
+      {
+        "id": 130,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000011wuir0IlRON.jpg",
+        "name": "香港TVB劲歌金榜",
+        "period": "2023_2",
+        "songList": [
+          { "id": 386805504, "singerName": "Mike 曾比特", "songName": "重见" },
+          { "id": 387846116, "singerName": "萧正楠", "songName": "小小大人物" },
+          { "id": 391047336, "singerName": "李幸倪", "songName": "Dum Dum" }
+        ]
+      },
+      {
+        "id": 127,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M000001MdrTE15HCsP.jpg",
+        "name": "台湾KKBOX榜",
+        "period": "2023_6",
+        "songList": [
+          { "id": 391589936, "singerName": "U:NUS", "songName": "U & US" },
+          { "id": 392245459, "singerName": "告五人", "songName": "又到天黑" },
+          { "id": 391433838, "singerName": "鱼丁糸", "songName": "这天 (鱼版)" }
+        ]
+      },
+      {
+        "id": 128,
+        "pic": "http://y.gtimg.cn/music/photo_new/T003R300x300M0000041dgOC47BPyG.jpg",
+        "name": "YouTube音乐排行榜",
+        "period": "2023_7",
+        "songList": [
+          {
+            "id": 391573225,
+            "singerName": "Miley Cyrus",
+            "songName": "Flowers"
+          },
+          {
+            "id": 386413469,
+            "singerName": "Fuerza Regida/Natanael Cano",
+            "songName": "Ch y la Pizza (Explicit)"
+          },
+          {
+            "id": 387471574,
+            "singerName": "Carin Leon/Grupo Frontera",
+            "songName": "Que Vuelvas"
+          }
+        ]
+      }
+    ]
+  }
+}
