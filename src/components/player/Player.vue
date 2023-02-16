@@ -267,7 +267,6 @@ export default {
 
     // 点击播放按钮
     function togglePlay() {
-      console.log("togglePlay");
       store.commit("setPlayingState", !playing.value);
     }
     // 电脑待机、关闭屏幕暂停播放

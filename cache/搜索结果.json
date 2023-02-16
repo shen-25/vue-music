@@ -1,0 +1,198 @@
+{
+  "singer": {
+    "name": "陈奕迅"
+  },
+  "songs": [
+    {
+      "id": 1313988,
+      "mid": "0029dqHX0nuawd",
+      "name": "开始位置=========",
+      "singer": "陈奕迅",
+      "url": "http://win.web.nf01.sycdn.kuwo.cn/42538537741d1958843258944b290277/63ede240/resource/n2/39/40/3765008418.mp3",
+      "duration": 285,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 5536869,
+      "mid": "004ec8yZ02bRYx",
+      "name": "阴天快乐",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 264,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003rytri2FHG3V.jpg?max_age=2592000",
+      "album": "rice & shine"
+    },
+    {
+      "id": 1313993,
+      "mid": "004M3yRr3kOfnS",
+      "name": "好久不见",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 250,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 1313988,
+      "mid": "0029dqHX0nuawd",
+      "name": "淘汰",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 285,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 5536869,
+      "mid": "004ec8yZ02bRYx",
+      "name": "阴天快乐",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 264,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003rytri2FHG3V.jpg?max_age=2592000",
+      "album": "rice & shine"
+    },
+    {
+      "id": 1313993,
+      "mid": "004M3yRr3kOfnS",
+      "name": "好久不见",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 250,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 1313988,
+      "mid": "0029dqHX0nuawd",
+      "name": "淘汰",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 285,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 5536869,
+      "mid": "004ec8yZ02bRYx",
+      "name": "阴天快乐",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 264,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003rytri2FHG3V.jpg?max_age=2592000",
+      "album": "rice & shine"
+    },
+    {
+      "id": 1313993,
+      "mid": "004M3yRr3kOfnS",
+      "name": "好久不见",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 250,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 1313988,
+      "mid": "0029dqHX0nuawd",
+      "name": "淘汰",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 285,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 5536869,
+      "mid": "004ec8yZ02bRYx",
+      "name": "阴天快乐",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 264,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003rytri2FHG3V.jpg?max_age=2592000",
+      "album": "rice & shine"
+    },
+    {
+      "id": 1313993,
+      "mid": "004M3yRr3kOfnS",
+      "name": "好久不见",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 250,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 1313988,
+      "mid": "0029dqHX0nuawd",
+      "name": "淘汰",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 285,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 5536869,
+      "mid": "004ec8yZ02bRYx",
+      "name": "阴天快乐",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 264,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003rytri2FHG3V.jpg?max_age=2592000",
+      "album": "rice & shine"
+    },
+    {
+      "id": 1313993,
+      "mid": "004M3yRr3kOfnS",
+      "name": "好久不见",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 250,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 1313988,
+      "mid": "0029dqHX0nuawd",
+      "name": "淘汰",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 285,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 5536869,
+      "mid": "004ec8yZ02bRYx",
+      "name": "阴天快乐",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 264,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003rytri2FHG3V.jpg?max_age=2592000",
+      "album": "rice & shine"
+    },
+    {
+      "id": 1313993,
+      "mid": "004M3yRr3kOfnS",
+      "name": "好久不见",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 250,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    },
+    {
+      "id": 1313993,
+      "mid": "004M3yRr3kOfnS",
+      "name": "结束位置**************",
+      "singer": "陈奕迅",
+      "url": "",
+      "duration": 250,
+      "pic": "https://y.gtimg.cn/music/photo_new/T002R800x800M000003yQidc3s7P65.jpg?max_age=2592000",
+      "album": "认了吧"
+    }
+  ],
+  "hasMore": true
+}

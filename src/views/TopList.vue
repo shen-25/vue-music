@@ -63,11 +63,11 @@ export default {
       this.$router.push({
         path: `/top-list/${top.id}`,
       });
-      cacheTopListItem(item);
+      this.cacheTopListItem(item);
     },
-  },
-  cacheTopListItem(item) {
-    storage.session.set(TOP_KEY, item);
+    cacheTopListItem(item) {
+      storage.session.set(TOP_KEY, item);
+    },
   },
 };
 </script>

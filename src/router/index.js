@@ -51,6 +51,12 @@ const routes = [
     name: "Search",
     component: () =>
       import(/* webpackChunkName: "Search" */ "@/views/Search.vue"),
+    children: [
+      {
+        path: ":id",
+        component: SingerDetail,
+      },
+    ],
   },
 ];
 

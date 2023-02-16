@@ -129,6 +129,10 @@ export default {
       const index = playList.value.findIndex((item) => {
         return song.id === item.id;
       });
+      if (index < 0) {
+        return;
+      }
+      store.commit("setCurrentIndex", index);
     }
 
     function removeSong(song) {
