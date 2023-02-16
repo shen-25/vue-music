@@ -35,7 +35,7 @@
 <script>
 import { computed, nextTick, ref, watch } from "vue";
 
-import searchJson from "../../../cache/不搜索结果.json";
+import searchJson from "@/cache/搜索结果.json";
 import { search } from "@/service/search";
 import { processSongs } from "@/service/song";
 import usePullUpLoad from "./use-pull-up-load";
@@ -111,7 +111,6 @@ export default {
       if (!hasMore.value && !props.query) {
         return;
       }
-      page.value++;
 
       // const result = await search(props.query, page.value, props.showSinger);
       // songs.value = songs.value.concat(await processSongs(result.songs));

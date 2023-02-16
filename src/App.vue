@@ -19,7 +19,7 @@ export default {
   },
   computed: {
     viewStyle() {
-      const bottom = this.playList.length ? "50px" : "0";
+      const bottom = this.playList.length ? "60px" : "0";
       return {
         bottom,
       };

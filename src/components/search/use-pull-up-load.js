@@ -22,13 +22,14 @@ export default function usePullUpLoad(requestData, preventPullUpLoad) {
         scrollVal.finishPullUp();
         return;
       }
+
       isPullUPload.value = true;
-      await requestData();
       setTimeout(() => {
+        requestData();
         scrollVal.finishPullUp();
         scrollVal.refresh();
         isPullUPload.value = false;
-      }, 1000);
+      }, 10);
     }
   });
   onUnmounted(() => {

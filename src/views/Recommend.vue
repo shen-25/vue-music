@@ -47,7 +47,7 @@ import { getRecommend } from "@/service/recommend";
 import Slider from "@/components/base/slider/Slider.vue";
 import Scroll from "@/components/base/scroll/Scroll";
 
-import recommend from "../../cache/recommend.json";
+import recommend from "@/cache/recommend.json";
 export default {
   name: "Recommend",
   components: {

@@ -2,7 +2,7 @@ import storage from "good-storage";
 
 import MusicList from "@/components/music-list/MusicList";
 import { processSongs } from "@/service/song";
-import dataDetail from "../../../cache/singerDetail.json";
+import dataDetail from "@/cache/singerDetail.json";
 export default function createDetailComponent(name, key, fetch) {
   return {
     name,

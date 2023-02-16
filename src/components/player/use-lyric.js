@@ -5,7 +5,7 @@ import Lyric from "lyric-parser";
 
 import { getLyric } from "@/service/song";
 
-import lyricJson from "../../../cache/修炼爱情lyric.json";
+import lyricJson from "@/cache/修炼爱情lyric.json";
 
 export default function useLyric(songReady, currentTime) {
   const store = useStore();

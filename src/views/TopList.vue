@@ -36,7 +36,7 @@ import storage from "good-storage";
 
 import Scroll from "@/components/base/scroll/Scroll";
 import { getTopList } from "@/service/topList";
-import getTopListJson from "../../cache/topList.json";
+import getTopListJson from "@/cache/topList.json";
 import { TOP_KEY } from "@/assets/js/constant";
 export default {
   name: "TopList",

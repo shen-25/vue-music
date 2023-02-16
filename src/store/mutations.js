@@ -28,5 +28,8 @@ const mutations = {
       return item;
     });
   },
+  setSearchHistory(state, searchList) {
+    state.searchHistory = searchList;
+  },
 };
 export default mutations;
